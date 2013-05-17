@@ -1,0 +1,4 @@
+feedler_home:
+    resource: "@FeedlerHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
