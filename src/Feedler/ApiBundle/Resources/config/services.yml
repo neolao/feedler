@@ -1,0 +1,7 @@
+parameters:
+#    feedler_api.example.class: Feedler\ApiBundle\Example
+
+services:
+#    feedler_api.example:
+#        class: %feedler_api.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

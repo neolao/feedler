@@ -1,0 +1,3 @@
+feedler_api_homepage:
+    pattern:  /
+    defaults: { _controller: FeedlerApiBundle:Default:index }

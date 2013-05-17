@@ -1,3 +1,7 @@
+feedler_api:
+    resource: "@FeedlerApiBundle/Resources/config/routing.yml"
+    prefix:   /api
+
 feedler_home:
     resource: "@FeedlerHomeBundle/Resources/config/routing.yml"
     prefix:   /
