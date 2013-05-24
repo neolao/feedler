@@ -1,0 +1,11 @@
+Feedler\UserBundle\Entity\User:
+    type: entity
+    table: users
+    repositoryClass: Feedler\UserBundle\Entity\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

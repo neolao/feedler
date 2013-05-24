@@ -2,10 +2,21 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset={{ _charset }}"/>
-        <title>{% block title %}{% endblock %}</title>
-        {% block head %}{% endblock %}
+        {% stylesheets 'bundles/feedlerhome/css/main.scss' filter='scssphp' %}
+            <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+        {% endstylesheets %}
+        <title>FEEDLER</title>
     </head>
     <body>
         <h1>FEEDLER</h1>
+
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            Connecté en tant que {{ app.user.username }} - <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
+        {% else %}
+            <a href="{{ path('fos_user_security_login') }}">Connexion</a>
+        {% endif %}
+
+        {% block body %}
+        {% endblock %}
     </body>
 </html>
