@@ -5,6 +5,7 @@ composer.lock
 app/bootstrap*
 
 # Symfony directories
+bin/*
 vendor/*
 */logs/*
 */cache/*
